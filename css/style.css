@@ -153,21 +153,44 @@ body::before {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 1.8rem;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
-.logo svg {
+.logo img {
+    width: 110px;
+    height: auto;
     transition: transform 0.3s ease;
     filter: drop-shadow(2px 2px 4px rgba(139, 105, 20, 0.2));
 }
 
-.logo:hover svg {
-    transform: rotate(180deg);
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Logo Sizes */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem 1.5rem;
+    }
+    
+    .logo img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 1rem;
+    }
+    
+    .logo img {
+        width: 75px;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo img {
+        width: 65px;
+    }
 }
 
 .nav-menu {
@@ -1455,7 +1478,7 @@ body::before {
 }
 
 .portfolio-title {
-    color: var(--bg-page);
+    color: white;
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
