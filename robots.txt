@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://witness-event-planners.vercel.app/sitemap.xml
