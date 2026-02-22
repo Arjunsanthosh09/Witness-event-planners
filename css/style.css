@@ -1853,6 +1853,10 @@ body::before {
     font-family: 'Crimson Text', serif;
     font-size: 1.05rem;
 }
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
 
 .footer-links {
     list-style: none;
